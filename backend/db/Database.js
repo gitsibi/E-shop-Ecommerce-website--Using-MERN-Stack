@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDatabase = () => {
   mongoose
-    .connect(process.env.DB_URL) // No need for useNewUrlParser or useUnifiedTopology
+    .connect(process.env.DB_URL) 
     .then((data) => {
       console.log(`MongoDB connected with server: ${data.connection.host}`);
     })
