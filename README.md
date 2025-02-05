@@ -31,3 +31,4 @@ Set up dedicated folders for organizing backend code effectively. Initialized an
 
 ## Milestone 4 :
 created a User Model to define how user data is structured in the database also developed a User Controller to manage user interactions, like adding or retrieving data. Additionally, configured Multer to handle file uploads, allowing users to store files such as images.
+

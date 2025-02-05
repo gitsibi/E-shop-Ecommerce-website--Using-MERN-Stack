@@ -16,7 +16,11 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
       path: "backend/config/.env",
     });
 };
+//import Routes
 const user = require("./controller/user");
+const product = require('./controller/product');
+app.use("/api/v2/product", product);
 app.use("/api/v2/user", user);
 app.use(ErrorHandler);
+
 module.exports = app;
