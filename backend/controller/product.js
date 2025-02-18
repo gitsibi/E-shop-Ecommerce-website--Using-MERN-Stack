@@ -158,7 +158,6 @@ router.put('/update-product/:id', pupload.array('images', 10), async (req, res) 
         existingProduct.images = updatedImages;
 
         await existingProduct.save();
-
         res.status(200).json({
             message: '✅ Product updated successfully',
             product: existingProduct,
